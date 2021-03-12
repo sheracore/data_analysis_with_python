@@ -35,5 +35,6 @@ print(df.dtypes) # ==> type of all columns
 print(df.describe()) # ==> returns a statistical summary
 print(df.describe(include="all")) # ==> returns full statistical summary
 #Some of this data is NaN its because that particular statistical metric cannot be calculated for that specific
+print(df.info()) # ==> provides a concise summary of you DataFrame
 
 ```
