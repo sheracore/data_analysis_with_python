@@ -31,4 +31,9 @@ df = pd.read_csv("csv_sample.csv")
 print(df.columns)
 df.to_csv("output.csv")
 
+print(df.dtypes) # ==> type of all columns
+print(df.describe()) # ==> returns a statistical summary
+print(df.describe(include="all")) # ==> returns full statistical summary
+#Some of this data is NaN its because that particular statistical metric cannot be calculated for that specific
+
 ```
