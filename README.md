@@ -48,5 +48,27 @@ If you want to add 1 to each symbiling entry:
 df["symboling"] = df["symboling"] + 1
 
 None or NaN value in DataFrame are missing value 
-To egnore missing value you can 
+To ignore missing value you have a lot of ways
+1: Drop missing values with their rows:
+==> dataframes.dropna()
+==> df = df.dropna(subset=["price"], axis=0, inplace=True)
+To delete row    axis=0
+To delete column axis=1
+“Inplace=True” just writes the result back into the dataframe.
+
+Don’t forget that this line of code does not change the dataframe:
+df = df.dropna(subset=["price"], axis=0)
+To modify the dataframe, you have to set the parameter "inplace" equal to true.
+df.dropna(subset=["price"], axis=0, inplace=True)
+
+2: Replace missing values:
+In Python, first we calculate the mean of the column
+
+import numpy as np
+
+datefram.replace(missing_value, new_value)
+print(df["RAB_EST_SR_CS"].mean())
+mean = df["RAB_EST_SR_CS"].mean()
+df["RAB_EST_SR_CS"].replace(np.nan, mean)
+
 ```
