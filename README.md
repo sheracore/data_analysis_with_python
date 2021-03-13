@@ -71,4 +71,12 @@ print(df["RAB_EST_SR_CS"].mean())
 mean = df["RAB_EST_SR_CS"].mean()
 df["RAB_EST_SR_CS"].replace(np.nan, mean)
 
+To transform mpg to L/100km we need to divide 235 by each value in the city-mpg column.
+df["city-mpg"] = 235/df["city-mpg"]
+Rename column name from "city-mpg" to "city-L/100km" using
+df.rename(columns={"RAB_EST_SR_CS": "New_Name"}, inplace=True)
+
+To convert datatype to anohter datatype use this:
+df["PAGING_INTENSITY(PPS/CELL)"] = df["PAGING_INTENSITY(PPS/CELL)"].astype("float")
+
 ```
