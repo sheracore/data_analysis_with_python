@@ -38,3 +38,15 @@ print(df.describe(include="all")) # ==> returns full statistical summary
 print(df.info()) # ==> provides a concise summary of you DataFrame
 
 ```
+
+# Data Pre-processing in Python also known as Data Cleaning or Data Wrangling
+```
+df["symboling"]
+or 
+df["body-style"]
+If you want to add 1 to each symbiling entry:
+df["symboling"] = df["symboling"] + 1
+
+None or NaN value in DataFrame are missing value 
+To egnore missing value you can 
+```
