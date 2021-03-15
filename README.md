@@ -97,3 +97,14 @@ mean method will return the avg value and std method will return the standard de
 df["PAGING_INTENSITY(PPS/CELL)"] = (df["PAGING_INTENSITY(PPS/CELL)"]-df["PAGING_INTENSITY(PPS/CELL)"].mean())/df["PAGING_INTENSITY(PPS/CELL)"].std()
 
 ```
+# Binning in python
+
+![Binning](z6.png)
+
+```
+binwidth = int(((max(df["RAB_EST_SR_CS"])-min(df["RAB_EST_SR_CS"]))/4))
+bins = range(int(min(df["RAB_EST_SR_CS"])), int(max(df["RAB_EST_SR_CS"])) , binwidth)
+group_names = ['Low', 'Medium', 'High']
+df['RAB_EST_SR_CS'] = pd.cut(df['RAB_EST_SR_CS'], bins, labels=group_names)
+
+```
