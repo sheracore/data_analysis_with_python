@@ -122,6 +122,8 @@ print(pd.get_dummies(df['REGION']))
 
 df['REGION'].value_counts() # count of each ragion
 
+![count](z12.png)
+
 # Group by
 
 ![groupby](z9.png)
@@ -135,3 +137,4 @@ df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
 
 df_pivot = df_grp.pivot(index= 'drive_wheels', columns= 'body_style')
 
+![groupby](z11.png)
