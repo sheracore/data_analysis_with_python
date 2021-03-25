@@ -33,3 +33,7 @@ print(df['RAB_EST_SR_CS'], df['range'] )
 print(bins)
 
 print(pd.get_dummies(df['REGION']))
+df_region_dummy = pd.get_dummies(df['REGION'])
+print(df_region_dummy['R1'].std())
+
+print(df['REGION'].value_counts())
