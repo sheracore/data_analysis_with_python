@@ -125,3 +125,10 @@ df['REGION'].value_counts() # count of each ragion
 # Group by
 
 ![groupby](z9.png)
+
+```
+df_test = df['drive_wheels', 'body_style', 'price']
+df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
+```
+
+![Pivot](z10.png)
