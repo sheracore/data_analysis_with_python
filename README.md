@@ -115,17 +115,5 @@ df['RAB_EST_SR_CS'] = pd.cut(df['RAB_EST_SR_CS'], bins, labels=group_names)
 pd.get_dummies(df['fuel'])
 
 print(pd.get_dummies(df['REGION']))
-      R1  R3  R7  R8
-0       1   0   0   0
-1       1   0   0   0
-2       1   0   0   0
-3       1   0   0   0
-4       0   0   0   1
-...    ..  ..  ..  ..
-16767   1   0   0   0
-16768   1   0   0   0
-16769   1   0   0   0
-16770   1   0   0   0
-16771   1   0   0   0
-
-
+  
+![dummies](z8.png)
