@@ -37,3 +37,7 @@ df_region_dummy = pd.get_dummies(df['REGION'])
 print(df_region_dummy['R1'].std())
 
 print(df['REGION'].value_counts())
+
+df_test = df['drive_wheels', 'body_style', 'price']
+df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
+
