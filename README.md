@@ -117,3 +117,11 @@ pd.get_dummies(df['fuel'])
 print(pd.get_dummies(df['REGION']))
   
 ![dummies](z8.png)
+
+# Count
+
+df['REGION'].value_counts() # count of each ragion
+
+# Group by
+
+![groupby](z9.png)
