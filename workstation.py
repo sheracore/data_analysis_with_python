@@ -10,7 +10,7 @@ print(df.columns)
 df.to_csv("output.csv")
 #--------------------------------------
 
-print(df.dtypes) # ==> type of all columns
+print("***********", df.dtypes) # ==> type of all columns
 print(df.describe()) # ==> returns a statistical summary
 print(df.describe(include="all")) # ==> returns full statistical summary
 #Some of this data is NaN its because that particular statistical metric cannot be calculated for that specific
@@ -38,6 +38,11 @@ print(df_region_dummy['R1'].std())
 
 print(df['REGION'].value_counts())
 
-df_test = df['drive_wheels', 'body_style', 'price']
-df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
+#df_test = df['drive_wheels', 'body_style', 'price']
+#df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
 
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.regplot(x="RAB_EST_SR_CS", y="DROP_CALL_RATE", data=df)
+plt.ylim(0,)
