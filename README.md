@@ -138,3 +138,11 @@ df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index=False).mean()
 df_pivot = df_grp.pivot(index= 'drive_wheels', columns= 'body_style')
 
 ![groupby](z11.png)
+
+# Correlation
+
+Correlation is a statistical metric for measuring to what extent different variables are interdependent.
+In other words, when we look at two variables over time, if one variable changes how does this affect change in the other variable?
+For example, smoking is known to be correlated to lung cancer. Since you have a higher chance of getting lung cancer if you smoke.
+In another example, there is a correlation between umbrella and rain variables where more precipitation means more people use umbrellas.
+
