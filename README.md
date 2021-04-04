@@ -150,3 +150,7 @@ In another example, there is a correlation between umbrella and rain variables w
 sns.regplot(x="RAB_EST_SR_CS", y="DROP_CALL_RATE", data=df)
 plt.ylim(0,)
 ```
+
+## Pearson correlation
+
+![Pearson correlation](z13.png)
