@@ -146,3 +146,7 @@ In other words, when we look at two variables over time, if one variable changes
 For example, smoking is known to be correlated to lung cancer. Since you have a higher chance of getting lung cancer if you smoke.
 In another example, there is a correlation between umbrella and rain variables where more precipitation means more people use umbrellas.
 
+```
+sns.regplot(x="RAB_EST_SR_CS", y="DROP_CALL_RATE", data=df)
+plt.ylim(0,)
+```
