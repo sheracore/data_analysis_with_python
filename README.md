@@ -154,3 +154,12 @@ plt.ylim(0,)
 ## Pearson correlation
 
 ![Pearson correlation](z13.png)
+
+from scipy import stats
+
+```
+from scipy import stats
+
+pearson_coef, p_value = stats.pearsonr(df["RAB_EST_SR_CS"], df["DROP_CALL_RATE"])
+print(pearson_coef, p_value)
+```
